@@ -1,0 +1,9 @@
+.AvisTex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.BottleImg {
+  width: 100%;
+  padding-top: 5%;
+}
