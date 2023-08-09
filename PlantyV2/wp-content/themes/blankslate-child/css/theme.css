@@ -14,3 +14,20 @@
   font-size: 24px;
   color: #ffffff;
 }
+
+.wpcf7-submit {
+  background: #d2776a; /* couleur d’arrière-plan */
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-family: "Syne", sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.wpcf7-submit:hover {
+  background: #0353a4; /* couleur d’arrière-plan */
+  cursor: pointer; /* forme du curseur de la souris */
+}
