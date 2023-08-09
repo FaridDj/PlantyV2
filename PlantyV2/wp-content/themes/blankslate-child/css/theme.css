@@ -1,9 +1,16 @@
-.AvisTex {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.wpcf7-text {
+  padding: 20px; /* marge interne de 10 pixels*/
+  border-radius: 7px; /* rayon de la bordure courbé de 3 pixels */
+  border: 1px solid #d9dbdd; /* bordure large de 1 pixel, continue et de couleur #d9dbdd (code couleur HEX) */
+
+  font-size: 17px; /* taille de police de 17 pixels */
+  color: #33415c; /* couleur de police */
+  margin-top: 15px;
+  margin-bottom: 20px;
 }
-.BottleImg {
-  width: 100%;
-  padding-top: 5%;
+
+.wpcf7 {
+  font-family: "Syne", sans-serif;
+  font-size: 24px;
+  color: #ffffff;
 }
