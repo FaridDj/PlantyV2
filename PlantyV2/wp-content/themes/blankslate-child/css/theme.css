@@ -40,22 +40,23 @@
   font-family: "Syne", sans-serif;
 }
 
-.menu,
+.menu-item,
 #header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
+  font-family: "Syne", sans-serif;
   margin-right: 3%;
 }
 
-.menu a {
+.menu-item a {
   text-decoration: none;
   text-align: center;
   margin: 20px;
   font-style: normal;
   font-weight: 114;
   font-size: 19px;
+  border: 4px solid red;
 }
 .commander {
   background-color: #e0b9b4;

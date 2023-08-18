@@ -26,20 +26,41 @@ function theme_enqueue_styles()
      array(), filemtime(get_stylesheet_directory() . '/css/theme.css'));
 }
 
-
-function register_my_menus() {
-    register_nav_menus(
-      array(
-        'header-menu' => __( 'Header Menu' ),
-        'extra-menu' => __( 'Extra Menu' )
-       )
-     );
-   }
-   add_action( 'init', 'register_my_menus' );
-
+/*Personnaliser le logo*/
    add_theme_support( 'custom-logo' );
 
+/*   function ajouter_element_barre_outils($wp_admin_bar) {
+    // Vérifiez si l'utilisateur est connecté
+    if (is_user_logged_in()) {
+        $args = array(
+            'id'    => 'mon_element',    // ID unique pour l'élément
+            'title' => 'Ma Rubrique',    // Texte à afficher
+            'href'  => admin_url('admin.php?page=slug_de_ma_rubrique'),    // Lien vers votre page d'administration ou toute autre URL
+            'meta'  => array('class' => 'ma-classe-personnalisee')    // Classes CSS optionnelles pour votre élément
+        );
+        $wp_admin_bar->add_node($args);
+    }
+}
+add_action('admin_bar_menu', 'ajouter_element_barre_outils', 999); // 999 pour s'assurer que votre élément est ajouté à la fin
 
+function restrict_admin() {
 
+	if ( ! current_user_can( 'manage_options' ) && ( ! wp_doing_ajax() ) ) {
+		wp_die( __( 'http://localhost/plantyV2/wp-admin/index.php' ) );
+	}
+}
+add_action( 'admin_init', 'restrict_admin', 1 );*/
+
+function add_search_form($items, $args) {
+    if( $args->theme_location == 'main-menu' ){
+    $items .= '<li class="menu-item">'
+            . '<div> <a href="#nous-rencontrer">Nous rencontrer</a></div>'
+            . '<div><a href="#admin">Admin</a></div>'
+            . '<div><a href="#commander">Commander</a></div>'
+            . '</li>';
+    }
+  return $items;
+}
+add_filter('wp_nav_menu_items', 'add_search_form', 10, 2);
 
 ?>
