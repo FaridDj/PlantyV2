@@ -51,30 +51,24 @@ function restrict_admin() {
 }
 add_action( 'admin_init', 'restrict_admin', 1 );*/
 
-function add_search_form($items, $args) {
-    if ( is_user_logged_in() ) { 
+function add_search_form($items, $args) {  // Defined the function name based on the filter hook at the end
 
-    if( $args->theme_location == 'admin-menu' ){
-    $items .= '<li class="menu-item">'
-            
-            . '<div class="nous-rencontrer"> <a href="nous-recontrer">Nous rencontrer</a>'
-            . '<a href="admin">Admin</a></div>'
-            . '<div class="commander"><a href="commander">Commander</a></div>'
-            
-            . '</li>';
+    if ($args->theme_location == 'main-menu') {
+        $items .= '<li class="menu-item">';
+        $items .= '<div class="nous-rencontrer"> <a href="nous-rencontrer">Nous rencontrer</a>';  // Corrected the spelling
+
+        if (is_user_logged_in()) {
+            $items .= '<a href="admin">Admin</a>';
+        }
+
+        $items .= '</div>';
+        $items .= '<div class="commander"><a href="commander">Commander</a></div>';
+        $items .= '</li>';
     }
-    } else {
-if( $args->theme_location == 'main-menu' ){
-    $items .= '<li class="menu-item">'
-            
-            . '<div class="nous-rencontrer"> <a href="nous-recontrer">Nous rencontrer</a></div>'
-            . '<div class="commander"><a href="commander">Commander</a></div>'
-            
-            . '</li>';
-    }
-  return $items;
+
+    return $items;
 }
-}
+
 add_filter('wp_nav_menu_items', 'add_search_form', 10, 2);
 
 ?>
