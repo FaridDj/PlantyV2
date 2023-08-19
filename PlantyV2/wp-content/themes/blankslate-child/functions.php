@@ -51,14 +51,14 @@ function restrict_admin() {
 }
 add_action( 'admin_init', 'restrict_admin', 1 );*/
 
-function add_search_form($items, $args) {  // Defined the function name based on the filter hook at the end
+function add_search_form($items, $args) { 
 
     if ($args->theme_location == 'main-menu') {
         $items .= '<li class="menu-item">';
         $items .= '<div class="nous-rencontrer"> <a href="nous-rencontrer">Nous rencontrer</a>';  // Corrected the spelling
 
         if (is_user_logged_in()) {
-            $items .= '<a href="admin">Admin</a>';
+            $items .= '<a href="wp-admin">Admin</a>';
         }
 
         $items .= '</div>';
