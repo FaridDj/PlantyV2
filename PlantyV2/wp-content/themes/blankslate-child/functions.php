@@ -52,7 +52,9 @@ function restrict_admin() {
 add_action( 'admin_init', 'restrict_admin', 1 );*/
 
 function add_search_form($items, $args) {
-    if( $args->theme_location == 'main-menu' ){
+    if ( is_user_logged_in() ) { 
+
+    if( $args->theme_location == 'admin-menu' ){
     $items .= '<li class="menu-item">'
             
             . '<div class="nous-rencontrer"> <a href="nous-recontrer">Nous rencontrer</a>'
@@ -61,7 +63,17 @@ function add_search_form($items, $args) {
             
             . '</li>';
     }
+    } else {
+if( $args->theme_location == 'main-menu' ){
+    $items .= '<li class="menu-item">'
+            
+            . '<div class="nous-rencontrer"> <a href="nous-recontrer">Nous rencontrer</a></div>'
+            . '<div class="commander"><a href="commander">Commander</a></div>'
+            
+            . '</li>';
+    }
   return $items;
+}
 }
 add_filter('wp_nav_menu_items', 'add_search_form', 10, 2);
 
