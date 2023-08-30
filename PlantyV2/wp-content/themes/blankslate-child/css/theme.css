@@ -86,12 +86,20 @@ menu-item {
 .zero {
   color: black;
   background: #ffffff;
-  width: 50%;
+  width: 100%;
+  border-top: 15px solid #ffffff;
+  border-bottom: 15px solid #ffffff;
+  font-size: 20px;
+  font-weight: 300;
+  border-radius: 10px 0px 0px 10px;
 }
 .nbr {
   width: 50%;
   color: #ffffff;
   background: #dc9f96;
+  border-radius: 0px 10px 10px 0px;
+  border-top: 15px solid #dc9f96;
+  border-bottom: 15px solid #dc9f96;
 }
 .plus {
   border-bottom: 1px solid #ffffff;
