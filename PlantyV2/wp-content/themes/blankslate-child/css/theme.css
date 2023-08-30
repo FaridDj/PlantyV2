@@ -76,3 +76,23 @@ menu-item {
   padding-bottom: 32px;
   font-family: "Syne", sans-serif;
 }
+
+/*Bouton nombre + -*/
+.choix {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.zero {
+  color: black;
+  background: #ffffff;
+  width: 50%;
+}
+.nbr {
+  width: 50%;
+  color: #ffffff;
+  background: #dc9f96;
+}
+.plus {
+  border-bottom: 1px solid #ffffff;
+}
