@@ -1,3 +1,11 @@
+body {
+  
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
 /*personnalisation du formulaire */
 
 .wpcf7-text {
@@ -37,18 +45,19 @@
 /*personnalisation menu*/
 
 .menu-item,
-#header {
+.navigation {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  width:100% ;
 }
 
-menu-item {
-  margin: 2em auto 2em;
-}
 
-.custom-logo {
-  margin: 1em auto 2em;
+.custom-logo{
+  width : 100px;
+  height : 30px;
+  align-items: right;
 }
 
 .menu-item a {
@@ -104,3 +113,15 @@ menu-item {
 .plus {
   border-bottom: 1px solid #ffffff;
 }
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+  .hebergements-and-populaires {
+    flex-direction: column;
+  }
+  
+  .hebergements {
+    width: 100%;
+  }
+  
