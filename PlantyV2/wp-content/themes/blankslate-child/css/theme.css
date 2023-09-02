@@ -20,18 +20,18 @@ body {
 .wpcf7 {
   font-family: "Syne", sans-serif;
   font-size: 24px;
-  color: #ffffff;
+  color: #000000;
 }
 
 .wpcf7-submit {
-  background: #d2776a; /* couleur d’arrière-plan */
+  background: #E0B9B4; /* couleur d’arrière-plan */
 
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 100px;
   padding-right: 100px;
   font-family: "Syne", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   color: #ffffff;
 }
 
@@ -72,17 +72,28 @@ body {
   padding-left: 100px;
   padding-top: 32px;
   padding-bottom: 32px;
-  font-family: "Syne", sans-serif;
+}
+
+.commander a {
+  font-family: "Syne", sans-serif;  
   color: #ffffff;
 }
+
+
 
 .nous-rencontrer {
   padding-right: 20px;
   padding-left: 100px;
   padding-top: 32px;
   padding-bottom: 32px;
-  font-family: "Syne", sans-serif;
 }
+
+.nous-rencontrer a {
+  font-family: "Syne", sans-serif;
+  color: black;
+}
+
+
 
 /*Bouton nombre + -*/
 .choix {
@@ -129,3 +140,4 @@ body {
 .nous-rencontrer {
   padding-left: 0px;
 }
+
