@@ -10,29 +10,33 @@ body {
   padding: 20px; /* marge interne de 10 pixels*/
   border-radius: 7px; /* rayon de la bordure courbé de 3 pixels */
   border: 1px solid #d9dbdd; /* bordure large de 1 pixel, continue et de couleur #d9dbdd (code couleur HEX) */
-
   font-size: 17px; /* taille de police de 17 pixels */
   color: #33415c; /* couleur de police */
   margin-top: 15px;
   margin-bottom: 20px;
 }
+/*personnalisation du formulaire nous contacter */
 
 .wpcf7 {
   font-family: "Syne", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   color: #000000;
+  
 }
 
-.wpcf7-submit {
-  background: #E0B9B4; /* couleur d’arrière-plan */
+/*personnalisation du bouton pour les 2 formulaires*/
 
+input.wpcf7-submit {
+  background: #E0B9B4; /* couleur d’arrière-plan du bouton */
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 90px;
+  padding-right: 90px;
   font-family: "Syne", sans-serif;
   font-size: 20px;
   color: #ffffff;
+  border-radius: 7px;
+  
 }
 
 .wpcf7-submit:hover {
@@ -40,6 +44,44 @@ body {
   cursor: pointer; /* forme du curseur de la souris */
 }
 
+.form-commander {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-family: "Syne", sans-serif;
+  font-size: 20px;
+  color: #FFFFFF;
+  
+}
+
+.colonne1 {
+  border-right: 2px solid #FFFFFF;
+  padding-right: 140px;
+}
+/*centrer le bouton formulaire commander*/
+
+.button-send {
+  padding-top: 40px;
+  margin: 0 auto;
+  border-radius: 7px;
+
+}
+
+
+.livraison {
+  padding-bottom: 40px;
+  font-family: "Syne", sans-serif;
+  font-size: 30px;
+  
+}
+.informations {
+  padding-bottom: 40px;
+  font-family: "Syne", sans-serif;
+  font-size: 30px;
+  
+}
 /*personnalisation menu*/
 
 .menu-item,
@@ -78,8 +120,6 @@ body {
   font-family: "Syne", sans-serif;  
   color: #ffffff;
 }
-
-
 
 .nous-rencontrer {
   padding-right: 20px;
@@ -124,9 +164,11 @@ body {
 }
 
 .mention {
-  padding-top: 20px;
   text-decoration: none;
+  padding-top: 30px;
   text-align: center;
+  font-family: "Syne", sans-serif;
+  color: black;
 }
 
 /* Small devices (phones, less than 768px) */@media (max-width: 1024px) {
