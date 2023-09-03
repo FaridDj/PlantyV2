@@ -64,7 +64,7 @@ input.wpcf7-submit {
 
 .button-send {
   padding-top: 40px;
-  margin: 0 auto;
+  padding-left: 35%;
   border-radius: 7px;
 }
 
@@ -72,26 +72,22 @@ input.wpcf7-submit {
   padding-bottom: 40px;
   font-family: "Syne", sans-serif;
   font-size: 30px;
-  
 }
 .informations {
   padding-bottom: 40px;
   font-family: "Syne", sans-serif;
   font-size: 30px;
-  
 }
 
 
 /*personnalisation formulaire nous contacter*/
 
 .form-rencontrer label {
-  
   width: 400px;
   height: 80px;
   font-family: "Syne", sans-serif;
   font-size: 20px;
   border: 0 auto;
-  
 }
 .form-rencontrer .wpcf7-text {
   width: 380px;
@@ -103,7 +99,7 @@ input.wpcf7-submit {
 }
 .form-rencontrer .send2 {
   margin-left: 15%;
-  
+  padding-top: 8%;
 }
 
 
@@ -180,7 +176,7 @@ input.wpcf7-submit {
   border-top: 15px solid #ffffff;
   border-bottom: 15px solid #ffffff;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 300px;
   border-radius: 10px 0px 0px 10px;
 }
 .nbr {
@@ -200,18 +196,28 @@ input.wpcf7-submit {
   padding-top: 30px;
   text-align: center;
   font-family: "Syne", sans-serif;
+  font-weight: 300px;
   color: black;
 }
 
-/* Small devices (phones, less than 768px) */@media (max-width: 1024px) {
-  .hebergements-and-populaires {
-    flex-direction: column;
-}
+/* Small devices (phones, less than 768px) */@media (max-width: 1023px) {
+ 
 .custom-logo {
   padding-left: 0px;
 }
-
 .nous-rencontrer {
   padding-left: 0px;
 }
-
+.colonne2 {
+ border-right: none;
+order: 1;  
+}
+.colonne1 {
+  border-right: none;
+}
+.livraison {
+  display:none;
+}
+.button-send {
+  padding-left: 5%;
+ }
