@@ -30,25 +30,3 @@ function theme_enqueue_styles()
    add_theme_support( 'custom-logo' );
 
 
-
-function add_search_form($items, $args) { 
-
-    if ($args->theme_location == 'main-menu') {
-        $items .= '<li class="menu-item">';
-        $items .= '<div class="nous-rencontrer"> <a href="nous-rencontrer">Nous rencontrer</a>';  // Corrected the spelling
-
-        if (is_user_logged_in()) {
-            $items .= '<a href="wp-admin">Admin</a>';
-        }
-
-        $items .= '</div>';
-        $items .= '<div class="commander"><a href="commander">Commander</a></div>';
-        $items .= '</li>';
-    }
-
-    return $items;
-}
-
-add_filter('wp_nav_menu_items', 'add_search_form', 10, 2);
-
-?>

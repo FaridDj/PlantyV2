@@ -1,3 +1,9 @@
+/* Cacher le menu */
+
+.hidden-menu-item {
+  display: none;
+}
+
 /*personnalisation du formulaire */
 
 .wpcf7-text {
@@ -98,25 +104,27 @@ input.wpcf7-submit {
 
 /*personnalisation menu*/
 
-.menu-item,
+.menu,
 .navigation {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
-
-logo {
-  width: 10%;
-  height: 10%;
-  padding-right: 10%;
-  padding-left: 2%;
-}
-
 .custom-logo {
   width: 150px;
   height: 20px;
   margin: 20%;
+}
+.menu-item {
+  text-decoration: none;
+  text-align: center;
+
+  font-style: normal;
+  font-weight: 114;
+  font-size: 19px;
+  font-family: "Syne", sans-serif;
 }
 
 .menu-item a {
@@ -126,41 +134,34 @@ logo {
   font-style: normal;
   font-weight: 114;
   font-size: 19px;
+  color: black;
 }
 .menu-item a:hover {
   color: #c02e44; /* couleur d’arrière-plan */
-  cursor: pointer; /* forme du curseur de la souris */
 }
+
 .commander {
   background-color: #e0b9b4;
-  padding-right: 20px;
-  padding-left: 50px;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  color: #ffffff;
 }
 
 .commander a {
-  font-family: "Syne", sans-serif;
-  color: #ffffff;
-}
-
-.commander:hover,
-.commander a:hover {
-  background-color: #c02e44;
-  color: #ffffff;
-}
-
-.nous-rencontrer {
+  display: block;
   padding-right: 20px;
-  padding-left: 100px;
+  padding-left: 80px;
   padding-top: 32px;
   padding-bottom: 32px;
+  font-family: "Syne", sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
 }
 
-.nous-rencontrer a {
-  font-family: "Syne", sans-serif;
-  color: black;
+.commander:hover {
+  background-color: #c02e44;
+}
+
+.commander a:hover {
+  color: #ffffff;
 }
 
 /*Bouton nombre + -*/
@@ -224,6 +225,21 @@ logo {
     height: 20%;
     border-radius: 7px;
   }
+
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .commander a {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+
+    text-align: center;
+  }
 }
 /* Small devices (phones, less than 768px) */
 @media (max-width: 766px) {
@@ -246,45 +262,31 @@ logo {
     border-radius: 7px;
   }
   /*reponsive Menu general*/
-  .logo {
-    width: 200px;
-    height: 70px;
-  }
 
-  .custom-logo {
-    width: 300px;
-    height: 20px;
-    margin: 15% -25%;
-  }
-
-  .navigation {
+  .navigation,
+  .menu {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
   }
-
   .menu-item {
+    margin: 12px 50px 10px 50px;
+    padding-left: 50px;
+  }
+  .custom-logo {
+    width: 200px;
+    height: 20px;
+    padding-left: 0px;
+    margin: 10% 10%;
+  }
+  .commander a {
     width: 100%;
-    margin: 12px 15px 0 auto;
-  }
-  .menu-item a {
-    margin: 12px 15px 0 auto;
-  }
-
-  .commander {
-    background-color: #e0b9b4;
-    width: 200%;
-    padding-top: 10px;
+    padding-right: 50px;
+    padding-left: 0px;
+    padding-top: 0px;
     padding-bottom: 10px;
-    margin: 0% -0%;
-    text-align: center;
-  }
-
-  .nous-rencontrer {
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: 0% -0%;
+    margin-left: 0px;
     text-align: center;
   }
   .message .wpcf7-text {
