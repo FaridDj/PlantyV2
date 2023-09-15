@@ -1,0 +1,314 @@
+/*personnalisation du formulaire */
+
+.wpcf7-text {
+  padding: 20px; /* marge interne de 10 pixels*/
+  border-radius: 7px; /* rayon de la bordure courbé de 3 pixels */
+  border: 1px solid #d9dbdd; /* bordure large de 1 pixel, continue et de couleur #d9dbdd (code couleur HEX) */
+  font-size: 17px; /* taille de police de 17 pixels */
+  color: #33415c; /* couleur de police */
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+/*personnalisation du formulaire nous contacter */
+
+.wpcf7 {
+  font-family: "Syne", sans-serif;
+  font-size: 20px;
+  color: #000000;
+}
+
+/*personnalisation du bouton pour les 2 formulaires*/
+
+input.wpcf7-submit {
+  background: #e0b9b4; /* couleur d’arrière-plan du bouton */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 90px;
+  padding-right: 90px;
+  font-family: "Syne", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  border-radius: 7px;
+  box-shadow: none;
+  box-shadow: none;
+  border: 0 none;
+  outline: 0;
+}
+
+.wpcf7-submit:hover {
+  background: #c02e44; /* couleur d’arrière-plan */
+  cursor: pointer; /* forme du curseur de la souris */
+}
+
+.form-commander {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-family: "Syne", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.colonne1 {
+  border-right: 2px solid #ffffff;
+  padding-right: 10%;
+}
+/*centrer le bouton formulaire commander*/
+
+.button-send {
+  padding-top: 40px;
+  padding-left: 35%;
+  border-radius: 7px;
+}
+
+.livraison {
+  padding-bottom: 40px;
+  font-family: "Syne", sans-serif;
+  font-size: 30px;
+}
+.informations {
+  padding-bottom: 40px;
+  font-family: "Syne", sans-serif;
+  font-size: 30px;
+}
+
+/*personnalisation formulaire nous contacter*/
+
+.form-rencontrer label {
+  width: 400px;
+  height: 80px;
+  font-family: "Syne", sans-serif;
+  font-size: 20px;
+}
+.form-rencontrer .wpcf7-text {
+  width: 380px;
+  height: 70px;
+  border-radius: 7px;
+}
+.message .wpcf7-text {
+  height: 240px;
+}
+.form-rencontrer .send2 {
+  padding-left: 25%;
+  padding-top: 8%;
+}
+
+/*personnalisation menu*/
+
+.menu,
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.custom-logo {
+  width: 150px;
+  height: 20px;
+  margin: 20%;
+}
+
+.menu-item {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  padding-right: 80px;
+  font-style: normal;
+  font-weight: 114;
+  font-size: 19px;
+  font-family: "Syne", sans-serif;
+}
+.menu-item :hover {
+  color: #c02e44; /* couleur d’arrière-plan */
+  cursor: pointer; /* forme du curseur de la souris */
+}
+.menu-item a {
+  color: #c02e44; /* couleur d’arrière-plan */
+  cursor: pointer; /* forme du curseur de la souris */
+  text-decoration: none;
+  color: black;
+}
+
+.menu-item-1899 {
+  background-color: #e0b9b4;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: #ffffff;
+  margin-right: 0;
+  cursor: pointer;
+}
+
+.menu-item-1899 a {
+  background-color: #e0b9b4;
+  margin-right: 40px;
+  margin-left: 40px;
+  padding: 30px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: #ffffff;
+
+  border: 4px solid red;
+}
+
+.menu-item-1899 :hover {
+  background-color: #c02e44;
+  color: #ffffff;
+}
+
+.menu-item-1899 a :hover {
+  background-color: #c02e44;
+  color: #ffffff;
+}
+
+.nous-rencontrer {
+  padding-right: 20px;
+  padding-left: 100px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.nous-rencontrer a {
+  font-family: "Syne", sans-serif;
+  color: black;
+}
+
+/*Bouton nombre + -*/
+.choix {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.zero {
+  color: black;
+  background: #ffffff;
+  width: 100%;
+  border-top: 15px solid #ffffff;
+  border-bottom: 15px solid #ffffff;
+  font-size: 20px;
+
+  border-radius: 10px 0px 0px 10px;
+}
+.nbr {
+  width: 50%;
+  color: #ffffff;
+  background: #dc9f96;
+  border-radius: 0px 10px 10px 0px;
+  border-top: 15px solid #dc9f96;
+  border-bottom: 15px solid #dc9f96;
+}
+.plus {
+  border-bottom: 1px solid #ffffff;
+}
+
+.mention {
+  text-decoration: none;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Syne", sans-serif;
+
+  color: black;
+}
+
+/* Small devices (phones, less than 1024px) */
+@media (max-width: 1023px) {
+  /* Reponsive formulaires commande*/
+  .colonne2 {
+    border-right: none;
+    order: 1;
+    width: 100%;
+  }
+  .colonne1 {
+    border-right: none;
+    width: 100%;
+  }
+  .livraison {
+    display: none;
+  }
+
+  .form-commander {
+    width: 100%;
+  }
+  .form-commander .wpcf7-text {
+    width: 100%;
+    height: 20%;
+    border-radius: 7px;
+  }
+}
+/* Small devices (phones, less than 768px) */
+@media (max-width: 766px) {
+  /*reponsive formulaire nous contacter*/
+
+  /*reponsive Bouton du formulaire nous contacter*/
+  input.wpcf7-submit {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 80%;
+  }
+  .form-rencontrer {
+    width: 100%;
+  }
+  .form-rencontrer .wpcf7-text {
+    width: 100%;
+    height: 20%;
+    border-radius: 7px;
+  }
+  /*reponsive Menu general*/
+  .logo {
+    width: 200px;
+    height: 70px;
+  }
+
+  .custom-logo {
+    width: 300px;
+    height: 20px;
+    margin: 15% -25%;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .menu {
+    width: 100%;
+    margin: 12px 15px 0 auto;
+  }
+  .menu a {
+    margin: 12px 15px 0 auto;
+  }
+
+  .commander {
+    background-color: #e0b9b4;
+    width: 200%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0% -0%;
+    text-align: center;
+  }
+
+  .nous-rencontrer {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0% -0%;
+    text-align: center;
+  }
+  .message .wpcf7-text {
+    height: 180px;
+  }
+  /*reponsive positionnement bouton commander dans form commander*/
+  .button-send {
+    padding-left: 25%;
+    padding-top: 8%;
+  }
+}

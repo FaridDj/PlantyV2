@@ -1,0 +1,300 @@
+/* Cacher le menu */
+
+.hidden-menu-item {
+  display: none;
+}
+
+/*personnalisation du formulaire */
+
+.wpcf7-text {
+  padding: 20px; /* marge interne de 10 pixels*/
+  border-radius: 7px; /* rayon de la bordure courbé de 3 pixels */
+  border: 1px solid #d9dbdd; /* bordure large de 1 pixel, continue et de couleur #d9dbdd (code couleur HEX) */
+  font-size: 17px; /* taille de police de 17 pixels */
+  color: #33415c; /* couleur de police */
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+/*personnalisation du formulaire nous contacter */
+
+.wpcf7 {
+  font-family: "Syne", sans-serif;
+  font-size: 20px;
+  color: #000000;
+}
+
+/*personnalisation du bouton pour les 2 formulaires*/
+
+input.wpcf7-submit {
+  background: #e0b9b4; /* couleur d’arrière-plan du bouton */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 90px;
+  padding-right: 90px;
+  font-family: "Syne", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  border-radius: 7px;
+  box-shadow: none;
+  box-shadow: none;
+  border: 0 none;
+  outline: 0;
+}
+
+.wpcf7-submit:hover {
+  background: #c02e44; /* couleur d’arrière-plan */
+  cursor: pointer; /* forme du curseur de la souris */
+}
+
+.form-commander {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-family: "Syne", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.colonne1 {
+  border-right: 2px solid #ffffff;
+  padding-right: 10%;
+}
+/*centrer le bouton formulaire commander*/
+
+.button-send {
+  padding-top: 40px;
+  padding-left: 35%;
+  border-radius: 7px;
+}
+
+.livraison {
+  padding-bottom: 40px;
+  font-family: "Syne", sans-serif;
+  font-size: 30px;
+}
+.informations {
+  padding-bottom: 40px;
+  font-family: "Syne", sans-serif;
+  font-size: 30px;
+}
+
+/*personnalisation formulaire nous contacter*/
+
+.form-rencontrer label {
+  width: 400px;
+  height: 80px;
+  font-family: "Syne", sans-serif;
+  font-size: 20px;
+  border: 0 auto;
+}
+.form-rencontrer .wpcf7-text {
+  width: 380px;
+  height: 70px;
+  border-radius: 7px;
+}
+.message .wpcf7-text {
+  height: 240px;
+}
+.form-rencontrer .send2 {
+  padding-left: 25%;
+  padding-top: 8%;
+}
+
+/*personnalisation menu*/
+
+.menu,
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.custom-logo {
+  width: 150px;
+  height: 20px;
+  margin: 20%;
+}
+.menu-item {
+  text-decoration: none;
+  text-align: center;
+
+  font-style: normal;
+  font-weight: 114;
+  font-size: 19px;
+  font-family: "Syne", sans-serif;
+}
+
+.menu-item a {
+  text-decoration: none;
+  text-align: center;
+  margin: 12px 50px 0 auto;
+  font-style: normal;
+  font-weight: 114;
+  font-size: 19px;
+  color: black;
+}
+.menu-item a:hover {
+  color: #c02e44; /* couleur d’arrière-plan */
+}
+
+.commander {
+  background-color: #e0b9b4;
+}
+
+.commander a {
+  display: block;
+  padding-right: 20px;
+  padding-left: 80px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-family: "Syne", sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+}
+
+.commander:hover {
+  background-color: #c02e44;
+}
+
+.commander a:hover {
+  color: #ffffff;
+}
+
+/*Bouton nombre + -*/
+.choix {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.zero {
+  color: black;
+  background: #ffffff;
+  width: 100%;
+  border-top: 15px solid #ffffff;
+  border-bottom: 15px solid #ffffff;
+  font-size: 20px;
+  font-weight: 300px;
+  border-radius: 10px 0px 0px 10px;
+}
+.nbr {
+  width: 50%;
+  color: #ffffff;
+  background: #dc9f96;
+  border-radius: 0px 10px 10px 0px;
+  border-top: 15px solid #dc9f96;
+  border-bottom: 15px solid #dc9f96;
+}
+.plus {
+  border-bottom: 1px solid #ffffff;
+}
+
+.mention {
+  text-decoration: none;
+  padding-top: 30px;
+  text-align: center;
+  font-family: "Syne", sans-serif;
+  font-weight: 300px;
+  color: black;
+}
+
+/* Small devices (phones, less than 1024px) */
+@media (max-width: 1023px) {
+  /* Reponsive formulaires commande*/
+  .colonne2 {
+    border-right: none;
+    order: 1;
+    width: 100%;
+  }
+  .colonne1 {
+    border-right: none;
+    width: 100%;
+  }
+  .livraison {
+    display: none;
+  }
+
+  .form-commander {
+    width: 100%;
+  }
+  .form-commander .wpcf7-text {
+    width: 100%;
+    height: 20%;
+    border-radius: 7px;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .commander a {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+
+    text-align: center;
+  }
+}
+/* Small devices (phones, less than 768px) */
+@media (max-width: 766px) {
+  /*reponsive formulaire nous contacter*/
+
+  /*reponsive Bouton du formulaire nous contacter*/
+  input.wpcf7-submit {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 80%;
+  }
+  .form-rencontrer {
+    width: 100%;
+  }
+  .form-rencontrer .wpcf7-text {
+    width: 100%;
+    height: 20%;
+    border-radius: 7px;
+  }
+  /*reponsive Menu general*/
+
+  .navigation,
+  .menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .menu-item {
+    margin: 12px 50px 10px 50px;
+    padding-left: 50px;
+  }
+  .custom-logo {
+    width: 200px;
+    height: 20px;
+    padding-left: 0px;
+    margin: 10% 10%;
+  }
+  .commander a {
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    margin-left: 0px;
+    text-align: center;
+  }
+  .message .wpcf7-text {
+    height: 180px;
+  }
+  /*reponsive positionnement bouton commander dans form commqnder*/
+  .button-send {
+    padding-left: 25%;
+    padding-top: 8%;
+  }
+}
